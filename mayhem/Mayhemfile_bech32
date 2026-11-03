@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: bech32
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/bech32/testsuite
+cmds:
+  - cmd: /mayhem/bech32
+    libfuzzer: true

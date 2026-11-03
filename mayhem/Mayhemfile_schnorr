@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: schnorr
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/schnorr/testsuite
+cmds:
+  - cmd: /mayhem/schnorr
+    libfuzzer: true

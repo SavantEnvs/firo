@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: chaum
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/chaum/testsuite
+cmds:
+  - cmd: /mayhem/chaum
+    libfuzzer: true

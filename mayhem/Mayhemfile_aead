@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: aead
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/aead/testsuite
+cmds:
+  - cmd: /mayhem/aead
+    libfuzzer: true

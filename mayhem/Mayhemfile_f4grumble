@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: f4grumble
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/f4grumble/testsuite
+cmds:
+  - cmd: /mayhem/f4grumble
+    libfuzzer: true
