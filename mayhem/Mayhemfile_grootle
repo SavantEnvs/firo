@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: grootle
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/grootle/testsuite
+cmds:
+  - cmd: /mayhem/grootle
+    libfuzzer: true

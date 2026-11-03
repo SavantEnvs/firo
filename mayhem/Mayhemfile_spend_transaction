@@ -1,0 +1,8 @@
+project: savantenvs/firo
+target: spend_transaction
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/spend_transaction/testsuite
+cmds:
+  - cmd: /mayhem/spend_transaction
+    libfuzzer: true
